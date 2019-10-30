@@ -20,6 +20,8 @@ import static org.junit.jupiter.params.provider.EnumSource.Mode.EXCLUDE;
 
 public class PurchaseJobTest {
 
+    private static PurchaseJob purchaseJob = new PurchaseJob();
+
     static Stream<Purchase> purchaseStatusNegativeDataSet() {
 
         return Stream.of(
@@ -28,8 +30,6 @@ public class PurchaseJobTest {
                 new Purchase(3L, PurchaseStatus.PENDING, TransactionStatus.PENDINGCHARGE)
         );
     }
-
-    private static PurchaseJob purchaseJob = new PurchaseJob();
 
     @ParameterizedTest
     @MethodSource("purchaseStatusNegativeDataSet")
