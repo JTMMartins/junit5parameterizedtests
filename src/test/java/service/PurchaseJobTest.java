@@ -22,7 +22,8 @@ public class PurchaseJobTest {
 
     static Stream<Purchase> purchaseStatusNegativeDataSet() {
 
-        return Stream.of(new Purchase(1L, PurchaseStatus.CONFIRMED, TransactionStatus.NEW),
+        return Stream.of(
+                new Purchase(1L, PurchaseStatus.CONFIRMED, TransactionStatus.NEW),
                 new Purchase(2L, PurchaseStatus.FAILED, TransactionStatus.FAILEDCHARGE),
                 new Purchase(3L, PurchaseStatus.PENDING, TransactionStatus.PENDINGCHARGE)
         );
