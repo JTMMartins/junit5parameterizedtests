@@ -1,0 +1,24 @@
+
+# Compiled class file
+*.class
+*.classpath
+*.project
+*.log
+
+# excluded Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# excluded folders #
+.idea/
+.settings/
+.sts4-cache/
+target/
+
+
+
